@@ -27,15 +27,15 @@ console.log(reverseNumberAdvanced(123409));
 //2. A basic function to reverse a number without using Javascript inbuilt methods
 function reverseNumberBasic(num) {
   //Step 1: initialze remainder as 0
-  let reamainder = 0;
+  let remainder = 0;
   //Step 2: Run a while loop until num>0
   while (num > 0) {
-    reamainder = reamainder * 10 + (num % 10);
+    remainder = reamainder * 10 + (num % 10);
     //here we are using Math.floor to to get the integer part of the division
     num = Math.floor(num / 10);
   }
   //Step 3: Assign remainder to reverseNumber
-  let reverseNumber = reamainder;
+  let reverseNumber = remainder;
   return reverseNumber;
 }
 console.log(reverseNumberBasic(123456));
